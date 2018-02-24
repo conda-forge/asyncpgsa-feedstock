@@ -33,9 +33,10 @@ requirements:
 test:
   imports:
     - asyncpgsa
+    - asyncpgsa.testing
 
 about:
-  home: https://github.com/CanopyTax/asyncpgsa
+  home: https://github.com/canopytax/asyncpgsa
   license: Apache 2.0
   license_family: Apache
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
