@@ -1,7 +1,7 @@
 {% set name = "asyncpgsa" %}
-{% set version = "0.17.0" %}
+{% set version = "0.19.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "a4dd825c886f666faab00aa472c0f22c33d64b05f47cb957571b5f8e65c67a57" %}
+{% set hash_value = "40e6c9c1fa8a556b7b83826d382489a451ac54ed20e902f7294cbfbf44459c56" %}
 
 package:
   name: {{ name|lower }}
@@ -23,11 +23,11 @@ requirements:
     - setuptools
     # Project imports itself to find out version during build
     # time which results into importing runtime dependencies
-    - asyncpg >=0.12.0,<0.13
+    - asyncpg >=0.14.0,<0.15
     - sqlalchemy
   run:
     - python
-    - asyncpg >=0.12.0,<0.13
+    - asyncpg >=0.14.0,<0.15
     - sqlalchemy
 
 test:
