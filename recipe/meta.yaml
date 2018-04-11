@@ -1,7 +1,7 @@
 {% set name = "asyncpgsa" %}
-{% set version = "0.19.2" %}
+{% set version = "0.22.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "40e6c9c1fa8a556b7b83826d382489a451ac54ed20e902f7294cbfbf44459c56" %}
+{% set hash_value = "c50d5abdba9ad0aa5f328ee897b754c4129c786bc70cc4c3e0a1d493a6b974ee" %}
 
 package:
   name: {{ name|lower }}
@@ -23,19 +23,20 @@ requirements:
     - setuptools
     # Project imports itself to find out version during build
     # time which results into importing runtime dependencies
-    - asyncpg >=0.14.0,<0.15
+    - asyncpg >=0.15.0,<0.16
     - sqlalchemy
   run:
     - python
-    - asyncpg >=0.14.0,<0.15
+    - asyncpg >=0.15.0,<0.16
     - sqlalchemy
 
 test:
   imports:
     - asyncpgsa
+    - asyncpgsa.testing
 
 about:
-  home: https://github.com/CanopyTax/asyncpgsa
+  home: https://github.com/canopytax/asyncpgsa
   license: Apache 2.0
   license_family: Apache
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
