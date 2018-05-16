@@ -1,7 +1,7 @@
 About asyncpgsa
 ===============
 
-Home: https://github.com/CanopyTax/asyncpgsa
+Home: https://github.com/canopytax/asyncpgsa
 
 Package license: Apache 2.0
 
@@ -18,14 +18,16 @@ asyncio framework.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/asyncpgsa-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/asyncpgsa-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/asyncpgsa-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/asyncpgsa-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/asyncpgsa-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/asyncpgsa-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/asyncpgsa-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/asyncpgsa-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/asyncpgsa-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/asyncpgsa-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/asyncpgsa-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/asyncpgsa-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/asyncpgsa/badges/version.svg)](https://anaconda.org/conda-forge/asyncpgsa)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/asyncpgsa/badges/downloads.svg)](https://anaconda.org/conda-forge/asyncpgsa)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-asyncpgsa-green.svg)](https://anaconda.org/conda-forge/asyncpgsa) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/asyncpgsa.svg)](https://anaconda.org/conda-forge/asyncpgsa) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/asyncpgsa.svg)](https://anaconda.org/conda-forge/asyncpgsa) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/asyncpgsa.svg)](https://anaconda.org/conda-forge/asyncpgsa) |
 
 Installing asyncpgsa
 ====================
