@@ -14,13 +14,13 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
   skip: True  # [py2k]
 
 requirements:
   host:
     - python
-    - setuptools
+    - pip
     # Project imports itself to find out version during build
     # time which results into importing runtime dependencies
     - asyncpg
