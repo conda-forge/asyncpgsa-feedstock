@@ -23,11 +23,11 @@ requirements:
     - setuptools
     # Project imports itself to find out version during build
     # time which results into importing runtime dependencies
-    - asyncpg >=0.15.0,<0.16
+    - asyncpg
     - sqlalchemy
   run:
     - python
-    - asyncpg >=0.15.0,<0.16
+    - asyncpg
     - sqlalchemy
 
 test:
