@@ -1,7 +1,7 @@
 {% set name = "asyncpgsa" %}
-{% set version = "0.25.2" %}
+{% set version = "0.26.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "8c835271a7f15f7f47fb2c6c1fb3a1bcc6d738133ad330cfd219e92f71a78001" %}
+{% set hash_value = "a51cfea3df8274bc02563efdd8ad5e535dba528505dcf279cb9d85d0f85df01f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_value }}
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
   skip: True  # [py2k]
 
