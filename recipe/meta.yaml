@@ -1,7 +1,5 @@
 {% set name = "asyncpgsa" %}
-{% set version = "0.26.1" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "1101fa0bd5c83ea0cd3c4c5d1b8efcf36307d33ae8b14357c3a1acbcaeef9e41" %}
+{% set version = "0.26.3" %}
 
 package:
   name: {{ name|lower }}
@@ -10,12 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_value }}
+  sha256: 3bcea15768925f10779aa03c01f9774d3da687031016eee7ebf799cf435540f7
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
-  skip: True  # [py2k]
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
+  skip: true  # [py2k]
 
 requirements:
   host:
@@ -39,7 +37,7 @@ about:
   home: https://github.com/canopytax/asyncpgsa
   license: Apache 2.0
   license_family: Apache
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: A fast PostgreSQL Database Client Library for Python/asyncio.
   description: |
     asyncpgsa is a database interface library designed specifically for
