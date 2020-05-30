@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/canopytax/asyncpgsa
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: A fast PostgreSQL Database Client Library for Python/asyncio.
