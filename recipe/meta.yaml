@@ -1,5 +1,5 @@
 {% set name = "asyncpgsa" %}
-{% set version = "0.26.3" %}
+{% set version = "0.27.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3bcea15768925f10779aa03c01f9774d3da687031016eee7ebf799cf435540f7
+  sha256: c0a2881ec2cd48285d0790aa878e540774d2c3a742438a26428200a55f74ed14
 
 build:
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   skip: true  # [py2k]
 
