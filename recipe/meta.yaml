@@ -21,12 +21,16 @@ requirements:
     - pip
     # Project imports itself to find out version during build
     # time which results into importing runtime dependencies
-    - asyncpg
-    - sqlalchemy
+    - asyncpg >=0.22.0
+    - sqlalchemy <2
   run:
     - python
     - asyncpg
-    - sqlalchemy
+    - sqlalchemy <2
+  requires:
+    - pip
+  commands:
+    - pip check
 
 test:
   imports:
