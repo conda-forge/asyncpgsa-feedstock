@@ -27,15 +27,15 @@ requirements:
     - python
     - asyncpg
     - sqlalchemy <2
-  requires:
-    - pip
-  commands:
-    - pip check
 
 test:
   imports:
     - asyncpgsa
     - asyncpgsa.testing
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/canopytax/asyncpgsa
