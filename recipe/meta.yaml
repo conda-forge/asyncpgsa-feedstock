@@ -11,7 +11,7 @@ source:
   sha256: 32e9ad376caf969d606800a977f044dda2ed946eb10f3c87dac2690ae897f6aa
 
 build:
-  number: 2
+  number: 3
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   skip: true  # [py2k]
 
@@ -21,17 +21,21 @@ requirements:
     - pip
     # Project imports itself to find out version during build
     # time which results into importing runtime dependencies
-    - asyncpg
-    - sqlalchemy
+    - asyncpg >=0.22.0
+    - sqlalchemy <2
   run:
     - python
     - asyncpg
-    - sqlalchemy
+    - sqlalchemy <2
 
 test:
   imports:
     - asyncpgsa
     - asyncpgsa.testing
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/canopytax/asyncpgsa
