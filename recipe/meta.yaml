@@ -22,6 +22,7 @@ requirements:
     # Project imports itself to find out version during build
     # time which results into importing runtime dependencies
     - asyncpg >=0.22.0
+    - setuptools
     - sqlalchemy <2
   run:
     - python
