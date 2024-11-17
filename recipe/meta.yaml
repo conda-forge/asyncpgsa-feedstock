@@ -7,11 +7,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 32e9ad376caf969d606800a977f044dda2ed946eb10f3c87dac2690ae897f6aa
 
 build:
-  number: 3
+  number: 4
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   skip: true  # [py2k]
 
@@ -22,6 +22,7 @@ requirements:
     # Project imports itself to find out version during build
     # time which results into importing runtime dependencies
     - asyncpg >=0.22.0
+    - setuptools
     - sqlalchemy <2
   run:
     - python
